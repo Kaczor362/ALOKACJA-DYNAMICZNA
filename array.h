@@ -15,4 +15,6 @@ char small(char *array);
 
 void clear(void);
 
+char saveArrayToFile(char array[]);
+
 #endif //UNTITLED8DX_ARRAY_H

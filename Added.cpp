@@ -32,7 +32,8 @@ int lenght(char *array){
 void clear(void) {
     while (getchar() != '\n');
 }
-    int saveArrayToFile(int array[]) {
+
+char saveArrayToFile(char array[]) {
         FILE *fptr = NULL;
                 fptr = fopen("array.txt", "w");
                 if (fptr == NULL){
