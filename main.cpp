@@ -1,6 +1,5 @@
 #include <iostream>
 #include "array.h"
-#define SIZE 10
 
 void menu(void){
     printf("0.Exit\n");
@@ -14,7 +13,7 @@ void menu(void){
 
 int main() {
 
-    char array[SIZE] = {""};
+    char array[SIZE] = {1,2,3,4,5,6,7,8,9,10};
     printf("Simple array...\n");
 
     int option = 0;
@@ -46,6 +45,10 @@ int main() {
                 }else{
                     printf("Something ocured...\n");
                 }
+                break;
+            case 6:
+                printDataFromTheFile(array);
+                printf("Data restored from the file\n");
                 break;
             default:
                 printf("CHose correct number: \n");

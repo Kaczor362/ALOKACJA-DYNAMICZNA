@@ -4,6 +4,7 @@
 
 #ifndef UNTITLED8DX_ARRAY_H
 #define UNTITLED8DX_ARRAY_H
+#define SIZE 10
 
 void insert(char array[]);
 
@@ -16,5 +17,7 @@ char small(char *array);
 void clear(void);
 
 char saveArrayToFile(char array[]);
+
+void printDataFromTheFile(char *array);
 
 #endif //UNTITLED8DX_ARRAY_H
