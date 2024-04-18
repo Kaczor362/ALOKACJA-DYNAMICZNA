@@ -38,7 +38,7 @@ char saveArrayToFile(char array[]) {
                     return 1;
                 }
         for (int i = 0; i < SIZE  ; ++i) {
-            fprintf(fptr,"array[%d] = %d\n", i, array[i]);
+            fprintf(fptr,"array[%c] = %c\n", i, array[i]);
         }
         fclose(fptr);
         return 0;
