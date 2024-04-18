@@ -7,6 +7,7 @@ void menu(void){
     printf("1. Enter data: \n");
     printf("2. Show data \n");
     printf("3. Check lenght of: \n");
+    printf("5. Saving data: \n");
     printf("Select an option:\n");
 
 }
@@ -35,7 +36,13 @@ int main() {
             case 4:
                 small(array);
             case 5:
-
+                printf("Saving data to file:\n");
+                if (!saveArrayToFile(array)){
+                    printf("Array saved");
+                }else{
+                    printf("Something ocured...\n");
+                }
+                break;
             default:
                 printf("CHose correct number: \n");
         }
