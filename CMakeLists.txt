@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(MAIN main.cpp
         Added.cpp
+        array.h
 )
