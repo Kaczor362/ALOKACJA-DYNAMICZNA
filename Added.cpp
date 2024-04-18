@@ -4,8 +4,7 @@
 
 void insert(char array[]){
     printf("Enter text:");
-    fgets( array,9 ,stdin);
-
+    fgets( array,100 ,stdin);
 }
 void show(char array[]){
     for (int i = 0; i < SIZE; ++i) {
@@ -32,7 +31,6 @@ int lenght(char *array){
 void clear(void) {
     while (getchar() != '\n');
 }
-
 char saveArrayToFile(char array[]) {
         FILE *fptr = NULL;
                 fptr = fopen("array.txt", "w");
@@ -44,4 +42,4 @@ char saveArrayToFile(char array[]) {
         }
         fclose(fptr);
         return 0;
-    }
+}

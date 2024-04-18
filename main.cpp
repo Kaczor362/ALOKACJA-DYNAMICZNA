@@ -29,12 +29,16 @@ int main() {
                 break;
             case 1:
                 insert(array);
+                break;
             case 2:
                 show(array);
+                break;
             case 3:
                 lenght(array);
+                break;
             case 4:
                 small(array);
+                break;
             case 5:
                 printf("Saving data to file:\n");
                 if (!saveArrayToFile(array)){
