@@ -12,7 +12,7 @@ void show(char array[]){
         printf("array[%d]= %c \n",i, array[i]);
     }
 }
-void small(char *array){
+char small(char *array){
     while (*array)
     {
         if ('A' <= *array && *array <= 'Z')
