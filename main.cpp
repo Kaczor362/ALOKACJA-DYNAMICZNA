@@ -1,6 +1,43 @@
 #include <iostream>
+#define SIZE 10
+
+void menu(void){
+    printf("0.Exit\n");
+    printf("1. Enter data: \n");
+    printf("2. Show data \n");
+    printf("3. Check lenght of: \n");
+    printf("Select an option:\n");
+
+}
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    char array[SIZE] = {""};
+    printf("Simple array...\n");
+
+    int option = 0;
+
+    do{
+        menu();
+        scanf("%d", &option);
+
+        switch (option) {
+            case  0 :
+                break;
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+
+            default:
+                printf("CHose correct number: \n");
+        }
+    }while  (option !=0);
+    {
+        printf("koniec : )");
+    }
+
+
     return 0;
 }
