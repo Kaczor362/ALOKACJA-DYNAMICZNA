@@ -32,29 +32,29 @@ void clear(void) {
     while (getchar() != '\n');
 }
 char saveArrayToFile(char array[]) {
-        FILE *fptr = NULL;
-                fptr = fopen("array.txt", "w");
-                if (fptr == NULL){
-                    return 1;
-                }
-        for (int i = 0; i < SIZE  ; ++i) {
-            fprintf(fptr,"array[%c] = %c\n", i, array[i]);
-        }
-        fclose(fptr);
-        return 0;
+    FILE *fptr = NULL;
+    fptr = fopen("array.txt", "w");
+    if (fptr == NULL){
+        return 1;
+    }
+    for (int i = 0; i < SIZE  ; ++i) {
+        fprintf(fptr,"array[%c] = %c\n", i, array[i]);
+    }
+    fclose(fptr);
+    return 0;
 }
 void printDataFromTheFile(char *array) {
     FILE *fptr = fopen("array.txt", "r");
-        if (fptr == NULL) {
-          printf("Error opening file for reading.\n");
-          return;
-     }
+    if (fptr == NULL) {
+        printf("Error opening file for reading.\n");
+        return;
+    }
 
     printf("Data from: 'array.txt':\n");
 
     for (int i = 0; i < SIZE; ++i) {
 
-        fscanf(fptr, "%c", &array[i]);
+        fscanf(fptr, "array[%c]", &array[i]);
 
         printf("%c\n", array[i]);
     }

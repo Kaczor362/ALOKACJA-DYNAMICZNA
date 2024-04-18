@@ -50,6 +50,7 @@ int main() {
                 printDataFromTheFile(array);
                 printf("Data restored from the file\n");
                 break;
+
             default:
                 printf("CHose correct number: \n");
         }
