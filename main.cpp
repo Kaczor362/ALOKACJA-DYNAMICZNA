@@ -1,4 +1,5 @@
 #include <iostream>
+#include "array.h"
 #define SIZE 10
 
 void menu(void){
@@ -20,14 +21,19 @@ int main() {
     do{
         menu();
         scanf("%d", &option);
+        clear();
 
         switch (option) {
             case  0 :
                 break;
             case 1:
+                insert(array);
             case 2:
+                show(array);
             case 3:
+                lenght(array);
             case 4:
+                small(array);
             case 5:
 
             default:
