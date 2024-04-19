@@ -8,6 +8,7 @@ void menu(void){
     printf("3. Check lenght of: \n");
     printf("5. Saving data: \n");
     printf("Select an option:\n");
+    printf("Select an option:\n");
 
 }
 
