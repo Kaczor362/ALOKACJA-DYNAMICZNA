@@ -1,27 +1,29 @@
 #include <iostream>
 #include "array.h"
 
+using namespace std;
+
 void menu(void){
-    printf("0.Exit\n");
-    printf("1. Enter data: \n");
-    printf("2. Show data \n");
-    printf("3. Check lenght of: \n");
-    printf("5. Saving data: \n");
-    printf("Select an option:\n");
-    printf("Select an option:\n");
+    cout<<("0.Exit\n");
+    cout<<("1. Enter data: \n");
+    cout<<("2. Show data \n");
+    cout<<("3. Check lenght of: \n");
+    cout<<("5. Saving data: \n");
+    cout<<("Select an option:\n");
+    cout<<("Select an option:\n");
 
 }
 
 int main() {
 
     char array[SIZE] = {1,2,3,4,5,6,7,8,9,10};
-    printf("Simple array...\n");
+    cout<<("Simple array...\n");
 
     int option = 0;
 
     do{
         menu();
-        scanf("%d", &option);
+        cout<<("%d", &option);
         clear();
 
         switch (option) {
@@ -42,22 +44,22 @@ int main() {
             case 5:
                 printf("Saving data to file:\n");
                 if (!saveArrayToFile(array)){
-                    printf("Array saved");
+                    cout<<("Array saved");
                 }else{
-                    printf("Something ocured...\n");
+                    cout<<("Something ocured...\n");
                 }
                 break;
             case 6:
                 printDataFromTheFile(array);
-                printf("Data restored from the file\n");
+                cout<<("Data restored from the file\n");
                 break;
 
             default:
-                printf("CHose correct number: \n");
+                cout<<("CHose correct number: \n");
         }
     }while  (option !=0);
     {
-        printf("koniec : )");
+        cout<<("koniec : )");
     }
 
 

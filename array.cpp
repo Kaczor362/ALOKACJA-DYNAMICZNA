@@ -1,6 +1,8 @@
 #include <iostream>
 #include "array.h"
 
+using namespace std;
+
 
 void insert(char array[]){
     printf("Enter text:");
@@ -8,7 +10,7 @@ void insert(char array[]){
 }
 void show(char array[]){
     for (int i = 0; i < SIZE; ++i) {
-        printf("array[%d]= %c \n",i, array[i]);
+        cout<<("array[%d]= %c \n",i, array[i]);
     }
 }
 char small(char *array){
@@ -46,17 +48,17 @@ char saveArrayToFile(char array[]) {
 void printDataFromTheFile(char *array) {
     FILE *fptr = fopen("array.txt", "r");
     if (fptr == NULL) {
-        printf("Error opening file for reading.\n");
+        cout<<("Error opening file for reading.\n");
         return;
     }
 
-    printf("Data from: 'array.txt':\n");
+    cout<<("Data from: 'array.txt':\n");
 
     for (int i = 0; i < SIZE; ++i) {
 
         fscanf(fptr, "array[%c]", &array[i]);
 
-        printf("%c\n", array[i]);
+        cout<<("%c\n", array[i]);
     }
 
     fclose(fptr);
