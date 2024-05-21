@@ -4,13 +4,12 @@
 using namespace std;
 
 void menu(void){
-    cout<<("0.Exit\n");
-    cout<<("1. Enter data: \n");
-    cout<<("2. Show data \n");
-    cout<<("3. Check lenght of: \n");
-    cout<<("5. Saving data: \n");
-    cout<<("Select an option:\n");
-    cout<<("Select an option:\n");
+    printf("0.Exit\n");
+    printf("1. Enter data: \n");
+    printf("2. Show data \n");
+    printf("3. Check lenght of: \n");
+    printf("5. Saving data: \n");
+    printf("Select an option:\n");
 
 }
 
