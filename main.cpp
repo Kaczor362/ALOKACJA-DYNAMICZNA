@@ -9,7 +9,7 @@ void menu(void){
     printf("2. Show data \n");
     printf("3. Check lenght of: \n");
     printf("5. Saving data: \n");
-    printf("6. Saving data: \n");
+    printf("6.Print data: \n");
     printf("Select an option:\n");
 
 }
@@ -23,7 +23,8 @@ int main() {
 
     do{
         menu();
-        cout<<("%d", &option);
+        printf("Choose option \n");
+        cin>>option;
         clear();
 
         switch (option) {
@@ -37,9 +38,6 @@ int main() {
                 break;
             case 3:
                 lenght(array);
-                break;
-            case 4:
-                small(array);
                 break;
             case 5:
                 printf("Saving data to file:\n");
@@ -55,11 +53,11 @@ int main() {
                 break;
 
             default:
-                cout<<("CHose correct number: \n");
+                cout<<("Chose correct number: \n");
         }
     }while  (option !=0);
     {
-        cout<<("koniec : )");
+        cout<<("END");
     }
 
 

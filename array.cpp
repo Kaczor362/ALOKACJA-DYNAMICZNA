@@ -10,10 +10,10 @@ void insert(char array[]){
 }
 void show(char array[]){
     for (int i = 0; i < SIZE; ++i) {
-        cout<<("array[%d]= %c \n",i, array[i]);
+        cout<<"array["<<i<<"]="<<array[i]<<endl;
     }
 }
-char small(char *array){
+int small(char *array){
     while (*array)
     {
         if ('A' <= *array && *array <= 'Z')
